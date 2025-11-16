@@ -2,6 +2,11 @@
 
 A real-time telemetry data processing system with a modern web dashboard for monitoring CPU and Memory usage.
 
+##👥 Contributors
+
+M. Aseena Sulthana – SRM Institute of Science and Technology (SRMIST)
+Amanpreet – SRM Institute of Science and Technology (SRMIST)
+
 ## Features
 
 - 🚀 **Real-Time Data Processing** - Generate and process telemetry data in real-time
@@ -109,9 +114,9 @@ This will generate 5 telemetry readings and save them to `telemetry_output.txt`.
 - Architecture highlights
 - Integration examples
 
-## License
+##📄 License
 
-This project is open source and available for educational purposes.
+This project is open-source and created for learning and educational purposes under Wipro’s Value Added Course.
 
 ## Contributing
 
