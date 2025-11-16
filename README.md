@@ -2,7 +2,7 @@
 
 A real-time telemetry data processing system with a modern web dashboard for monitoring CPU and Memory usage.
 
-##👥 Contributors
+👥 Contributors
 
 M. Aseena Sulthana – SRM Institute of Science and Technology (SRMIST)
 Amanpreet – SRM Institute of Science and Technology (SRMIST)
