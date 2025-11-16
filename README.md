@@ -5,6 +5,7 @@ A real-time telemetry data processing system with a modern web dashboard for mon
 👥 Contributors
 
 M. Aseena Sulthana – SRM Institute of Science and Technology (SRMIST)
+
 Amanpreet – SRM Institute of Science and Technology (SRMIST)
 
 ## Features
@@ -114,7 +115,7 @@ This will generate 5 telemetry readings and save them to `telemetry_output.txt`.
 - Architecture highlights
 - Integration examples
 
-##📄 License
+📄 License
 
 This project is open-source and created for learning and educational purposes under Wipro’s Value Added Course.
 
