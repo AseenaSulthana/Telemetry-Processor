@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - Telemetry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="animated-background"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-square">
+                    <span class="logo-letter">T</span>
+                </div>
+                <span class="logo-text">Telemetry</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="analysis.html" class="nav-link active">Analytics</a>
+                <a href="how it works.html" class="nav-link">How It Works</a>
+                <a href="about.html" class="nav-link">About</a>
+                <button class="nav-signin">Sign In</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="analytics-container">
+        <div class="analytics-header">
+            <h1>Analytics & Insights</h1>
+            <div class="analytics-controls">
+                <select class="control-select" style="padding: 0.75rem 1rem; background: var(--bg-secondary); border: 1px solid rgba(148, 163, 184, 0.2); border-radius: 6px; color: var(--text-primary);">
+                    <option>Last 7 Days</option>
+                    <option>Last 30 Days</option>
+                    <option>Last 90 Days</option>
+                </select>
+                <button class="btn btn-secondary">Export Report</button>
+            </div>
+        </div>
+
+        <div class="analytics-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+            <div class="dashboard-card">
+                <h2>CPU Usage Trends</h2>
+                <div style="height: 200px; display: flex; align-items: center; justify-content: center; background: rgba(148, 163, 184, 0.05); border-radius: 8px; margin-top: 1rem;">
+                    <svg viewBox="0 0 400 200" style="width: 100%; height: 100%;">
+                        <polyline points="0,150 40,120 80,130 120,100 160,90 200,110 240,85 280,95 320,70 360,80 400,60" 
+                                  fill="none" stroke="var(--accent-teal)" stroke-width="2"/>
+                        <polyline points="0,160 40,140 80,150 120,130 160,120 200,135 240,110 280,120 320,95 360,105 400,85" 
+                                  fill="none" stroke="rgba(148, 163, 184, 0.5)" stroke-width="2" stroke-dasharray="5,5"/>
+                    </svg>
+                </div>
+                <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 1rem; text-align: center;">Blue: Average • Gray: Range</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h2>Memory Usage Trends</h2>
+                <div style="height: 200px; display: flex; align-items: center; justify-content: center; background: rgba(148, 163, 184, 0.05); border-radius: 8px; margin-top: 1rem;">
+                    <svg viewBox="0 0 400 200" style="width: 100%; height: 100%;">
+                        <polyline points="0,140 40,130 80,125 120,110 160,100 200,105 240,95 280,100 320,85 360,90 400,75" 
+                                  fill="none" stroke="var(--accent-purple)" stroke-width="2"/>
+                        <polyline points="0,150 40,145 80,140 120,125 160,115 200,120 240,110 280,115 320,100 360,105 400,90" 
+                                  fill="none" stroke="rgba(148, 163, 184, 0.5)" stroke-width="2" stroke-dasharray="5,5"/>
+                    </svg>
+                </div>
+                <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 1rem; text-align: center;">Purple: Average • Gray: Range</p>
+            </div>
+        </div>
+
+        <div class="dashboard-card full-width">
+            <h2>Performance Metrics</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                <div style="padding: 1rem; background: rgba(148, 163, 184, 0.05); border-radius: 8px;">
+                    <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">Avg Response Time</div>
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent-teal);">124ms</div>
+                </div>
+                <div style="padding: 1rem; background: rgba(148, 163, 184, 0.05); border-radius: 8px;">
+                    <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">Error Rate</div>
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent-teal);">0.12%</div>
+                </div>
+                <div style="padding: 1rem; background: rgba(148, 163, 184, 0.05); border-radius: 8px;">
+                    <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">Uptime</div>
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent-teal);">99.97%</div>
+                </div>
+                <div style="padding: 1rem; background: rgba(148, 163, 184, 0.05); border-radius: 8px;">
+                    <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">Peak Load</div>
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent-teal);">2.4M req/s</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Telemetry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

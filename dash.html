@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Telemetry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="animated-background"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-square">
+                    <span class="logo-letter">T</span>
+                </div>
+                <span class="logo-text">Telemetry</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="analysis.html" class="nav-link">Analytics</a>
+                <a href="how it works.html" class="nav-link">How It Works</a>
+                <a href="about.html" class="nav-link">About</a>
+                <button class="nav-signin">Sign In</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <div class="dashboard-header">
+            <h1>Telemetry Dashboard</h1>
+            <div class="header-controls">
+                <button class="btn btn-secondary" id="autoRefreshToggle" onclick="toggleAutoRefresh()">
+                    ⏸️ Auto-Refresh: OFF
+                </button>
+                <button class="btn btn-primary fetch-btn" id="fetchBtn" onclick="fetchTelemetryData()">
+                    🔄 Fetch Telemetry Data
+                </button>
+            </div>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            Loading telemetry data...
+        </div>
+
+        <div class="error-message" id="errorMessage"></div>
+
+        <div id="statsSummary" style="display: none;">
+            <div class="stats-summary">
+                <h2 style="margin-bottom: 10px; color: var(--text-primary);">Summary Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value" id="totalReadings">0</div>
+                        <div class="stat-label">Total Readings</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="avgCpu">0%</div>
+                        <div class="stat-label">Avg CPU Usage</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="avgMemory">0%</div>
+                        <div class="stat-label">Avg Memory Usage</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="maxCpu">0%</div>
+                        <div class="stat-label">Max CPU Usage</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="dashboard" class="dashboard"></div>
+
+        <div id="emptyState" class="empty-state">
+            Click the button above to fetch and display telemetry data
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Telemetry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

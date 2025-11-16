@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Telemetry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="animated-background"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-square">
+                    <span class="logo-letter">T</span>
+                </div>
+                <span class="logo-text">Telemetry</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="analysis.html" class="nav-link">Analytics</a>
+                <a href="how it works.html" class="nav-link active">How It Works</a>
+                <a href="about.html" class="nav-link">About</a>
+                <button class="nav-signin">Sign In</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h1 style="font-size: 3rem; margin-bottom: 1rem;">How Our Telemetry System Works</h1>
+                <p style="color: var(--text-secondary); font-size: 1.1rem;">A comprehensive overview of our real-time data processing pipeline</p>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 2rem; margin-bottom: 3rem;">
+                <div class="dashboard-card">
+                    <div style="display: flex; gap: 2rem; align-items: start;">
+                        <div style="width: 60px; height: 60px; background: var(--accent-teal); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 700; flex-shrink: 0;">1</div>
+                        <div>
+                            <h2 style="margin-bottom: 1rem; color: var(--text-primary);">Device Collection</h2>
+                            <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Devices send telemetry data continuously through secure connections. Our lightweight agent collects system metrics, application logs, and business events with minimal overhead.</p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Real-time streaming</span>
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Automatic batching</span>
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Offline buffering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div style="display: flex; gap: 2rem; align-items: start;">
+                        <div style="width: 60px; height: 60px; background: var(--accent-teal); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 700; flex-shrink: 0;">2</div>
+                        <div>
+                            <h2 style="margin-bottom: 1rem; color: var(--text-primary);">Data Ingestion</h2>
+                            <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Raw telemetry data arrives at our distributed ingestion layer. The system validates, normalizes, and routes data to appropriate processing pipelines based on data type and priority.</p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Load balancing</span>
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Schema validation</span>
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Deduplication</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div style="display: flex; gap: 2rem; align-items: start;">
+                        <div style="width: 60px; height: 60px; background: var(--accent-teal); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 700; flex-shrink: 0;">3</div>
+                        <div>
+                            <h2 style="margin-bottom: 1rem; color: var(--text-primary);">Processing & Analysis</h2>
+                            <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Data flows through real-time processing engines. Complex event processing rules identify patterns, correlate events, and compute aggregates for immediate insights and alerts.</p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Real-time analytics</span>
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Custom rules engine</span>
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Machine learning scoring</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div style="display: flex; gap: 2rem; align-items: start;">
+                        <div style="width: 60px; height: 60px; background: var(--accent-teal); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 700; flex-shrink: 0;">4</div>
+                        <div>
+                            <h2 style="margin-bottom: 1rem; color: var(--text-primary);">Storage & Retention</h2>
+                            <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Processed data is stored in optimized data warehouses. Hot data stays in fast storage for immediate queries, while historical data is archived with configurable retention policies.</p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Tiered storage</span>
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Automatic archival</span>
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Data compression</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div style="display: flex; gap: 2rem; align-items: start;">
+                        <div style="width: 60px; height: 60px; background: var(--accent-teal); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 700; flex-shrink: 0;">5</div>
+                        <div>
+                            <h2 style="margin-bottom: 1rem; color: var(--text-primary);">Visualization & Alerts</h2>
+                            <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Real-time dashboards display live metrics and trends. Intelligent alert system notifies teams immediately when issues are detected, with context and recommended actions.</p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Live dashboards</span>
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Smart alerts</span>
+                                <span style="padding: 0.5rem 1rem; background: rgba(6, 182, 212, 0.2); border-radius: 6px; color: var(--accent-teal); font-size: 0.9rem;">✓ Mobile notifications</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Telemetry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

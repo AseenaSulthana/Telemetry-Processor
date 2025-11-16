@@ -1,0 +1,20 @@
+# Compiled Java files
+*.class
+
+# IDE files
+*.iml
+.idea/
+*.swp
+*.swo
+*~
+
+# Generated files
+telemetry_output.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
